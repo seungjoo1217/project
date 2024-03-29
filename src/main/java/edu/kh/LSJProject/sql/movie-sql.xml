@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+
+	<entry key="selectAll">
+		SELECT MOVIE_TITLE, RESERVATION_DATE, RESERVATION_LOCATION, RESERVATION_TIME, RESERVATION_SEAT 
+		FROM "MOVIE"
+		WHERE MEMBER_NO = ?
+		AND RESERVATION_DEL_FL = 'N'
+	</entry>
+	
+		
+	<entry key="insert">
+		INSERT INTO "MOVIE"
+		VALUES(SEQ_MOVIE_NO.NEXTVAL, ?, ?, ?, ?, ?, 13000, DEFAULT, ?)
+	</entry>
+	
+	
+	
+</properties>

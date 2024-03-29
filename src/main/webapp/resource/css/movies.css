@@ -1,0 +1,483 @@
+@font-face {
+    font-family: 'Giants-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    /*border: 1px white solid;*/
+}
+
+body{
+    font-family: 'Giants-Bold';
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/배경화면-5.png");
+    background-repeat : no-repeat;
+    background-size : cover;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-main {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/******************************************/
+.top-top {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/*로고*/
+#logo {
+    height: 100px;
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo > div {
+    width: 100px;
+    height: 70px;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* 승주 시네마 */
+#cinemaName {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cinemaName > a{
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/*로그인*/
+#login {
+    flex-basis: 10%;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    border: 1px white solid;
+}
+#login > a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.3s;
+}
+#login > a:hover {
+    color: black;
+}
+#login:hover {
+    color: black;
+    background-color: white;
+}
+
+/*로그아웃*/
+#logout {
+    flex-basis: 10%;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    border: 1px white solid;
+}
+#logout > a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.3s;
+}
+#logout > a:hover {
+    color: black;
+}
+#logout:hover {
+    color: black;
+    background-color: white;
+}
+
+/*회원가입*/
+#signup {
+    flex-basis: 10%;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    border: 1px white solid;
+}
+#signup > a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.3s;
+}
+#signup > a:hover {
+    color: black;
+}
+#signup:hover {
+    color: black;
+    background-color: white;
+}
+
+#welcome {
+    flex-basis: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }
+ 
+ #upButtons {
+     display: flex;
+ }
+ #updateMember {
+     color: black;
+     background-color: white;
+     border: 1px white solid;
+     font-family: 'Giants-Bold';
+     border-radius: 10px;
+     font-size: 13px;
+     width: 40px;
+ }
+ #deleteBox {
+     margin-left: 5px;
+     width: 60px;
+     background-color: red;
+     border-radius: 10px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ #deleteMember {
+     text-align: center;
+     color: white;
+     font-family: 'Giants-Bold';
+     font-size: 13px;
+ }
+ #nowelcome {
+     flex-basis: 10%;
+ }
+
+
+
+/**********************************************/
+
+
+
+
+.top-bottom {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav > span{
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+nav > span:hover{
+    background-color: white;
+}
+
+/*상단 배너 - 영화*/
+#movieSelect {
+    cursor: pointer;
+    flex-basis: 10%;
+    text-align: center;
+    border: 1px white solid;
+    margin-bottom: 10px;
+}
+
+#movieSelect>a {
+    color: white;
+    transition-duration: 0.3s;
+}
+
+#movieSelect>a:hover{
+    color: black;
+}
+
+/*상단 배너 - 예매*/
+#reservation {
+    cursor: pointer;
+    flex-basis: 10%;
+    text-align: center;
+    border: 1px white solid;
+    margin-bottom: 10px;
+}
+
+#reservation>a {
+    color: white;
+    transition-duration: 0.3s;
+}
+
+#reservation>a:hover{
+    color: black;
+}
+
+
+
+/*******************************************/
+
+
+/*영화들*/
+.movies-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.movie {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie > span {
+    width: 300px;
+    height: 400px;
+    margin: 35px;
+    display: flex;
+    align-items: end;
+}
+
+#movie-1 {
+    cursor: pointer;
+    background-image: url("../images/영화들-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px 350px;
+    transition-duration: 0.5s;
+    filter: drop-shadow(10px 10px 5px #000000);
+}
+#movie-1:hover {
+    background-size: 300px 400px;
+}
+
+#movie-2 {
+    cursor: pointer;
+    background-image: url("../images/영화들-2.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px 350px;
+    transition-duration: 0.5s;
+    filter: drop-shadow(10px 10px 5px #000000);
+}
+#movie-2:hover {
+    background-size: 300px 400px;
+}
+
+#movie-3 {
+    cursor: pointer;
+    background-image: url("../images/영화들-3.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px 350px;
+    transition-duration: 0.5s;
+    filter: drop-shadow(10px 10px 5px #000000);
+}
+#movie-3:hover {
+    background-size: 300px 400px;
+}
+
+#movie-4 {
+    cursor: pointer;
+    background-image: url("../images/영화들-4.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px 350px;
+    transition-duration: 0.5s;
+    filter: drop-shadow(10px 10px 5px #000000);
+}
+#movie-4:hover {
+    background-size: 300px 400px;
+}
+
+#movie-5 {
+    cursor: pointer;
+    background-image: url("../images/영화들-5.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px 350px;
+    transition-duration: 0.5s;
+    filter: drop-shadow(10px 10px 5px #000000);
+}
+#movie-5:hover {
+    background-size: 300px 400px;
+}
+
+#movie-6 {
+    cursor: pointer;
+    background-image: url("../images/영화들-6.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px 350px;
+    transition-duration: 0.5s;
+    filter: drop-shadow(10px 10px 5px #000000);
+    
+}
+#movie-6:hover {
+    background-size: 300px 400px;
+}
+
+#movie-7 {
+    cursor: pointer;
+    background-image: url("../images/영화들-7.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px 350px;
+    transition-duration: 0.5s;
+    filter: drop-shadow(10px 10px 5px #000000);
+}
+#movie-7:hover {
+    background-size: 300px 400px;
+}
+
+#movie-8 {
+    cursor: pointer;
+    background-image: url("../images/영화들-8.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px 350px;
+    transition-duration: 0.5s;
+    filter: drop-shadow(10px 10px 5px #000000);
+}
+#movie-8:hover {
+    background-size: 300px 400px;
+}
+
+#movie-9 {
+    cursor: pointer;
+    background-image: url("../images/영화들-9.JPG");
+    background-repeat: no-repeat;
+    background-size: 250px 350px;
+    transition-duration: 0.5s;
+    filter: drop-shadow(10px 10px 5px #000000);
+}
+#movie-9:hover {
+    background-size: 300px 400px;
+}
+
+#movie-10 {
+    cursor: pointer;
+    background-image: url("../images/영화들-10.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px 350px;
+    transition-duration: 0.5s;
+    filter: drop-shadow(10px 10px 5px #000000);
+}
+#movie-10:hover {
+    background-size: 300px 400px;
+}
+
+#movie-11 {
+    cursor: pointer;
+    background-image: url("../images/영화들-11.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px 350px;
+    transition-duration: 0.5s;
+    filter: drop-shadow(10px 10px 5px #000000);
+}
+#movie-11:hover {
+    background-size: 300px 400px;
+}
+
+#movie-12 {
+    cursor: pointer;
+    background-image: url("../images/영화들-12.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px 350px;
+    transition-duration: 0.5s;
+    filter: drop-shadow(10px 10px 5px #000000);
+}
+#movie-12:hover {
+    background-size: 300px 400px;
+}
+
+#movie-13 {
+    cursor: pointer;
+    background-image: url("../images/영화들-13.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px 350px;
+    transition-duration: 0.5s;
+    filter: drop-shadow(10px 10px 5px #000000);
+}
+#movie-13:hover {
+    background-size: 300px 400px;
+}
+
+#movie-14 {
+    cursor: pointer;
+    background-image: url("../images/영화들-14.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px 350px;
+    transition-duration: 0.5s;
+    filter: drop-shadow(10px 10px 5px #000000);
+}
+#movie-14:hover {
+    background-size: 300px 400px;
+}
+
+#movie-15 {
+    cursor: pointer;
+    background-image: url("../images/영화들-15.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px 350px;
+    transition-duration: 0.5s;
+    filter: drop-shadow(10px 10px 5px #000000);
+}
+#movie-15:hover {
+    background-size: 300px 400px;
+}
+
+#movie-16 {
+    cursor: pointer;
+    background-image: url("../images/영화들-16.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px 350px;
+    transition-duration: 0.5s;
+    filter: drop-shadow(10px 10px 5px #000000);
+}
+#movie-16:hover {
+    background-size: 300px 400px;
+}
+
+.movie > span > p {
+    margin: 0;
+    font-size: 150px;
+    font-style: italic;
+    color: rgba(255, 255, 255,0.8);
+    filter: drop-shadow(5px 5px 3px #000000);
+}

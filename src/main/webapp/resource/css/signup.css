@@ -1,0 +1,288 @@
+@font-face {
+    font-family: 'Giants-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/Giants-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    /*border: 1px white solid;*/
+}
+
+body{
+    font-family: 'Giants-Bold';
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/배경화면-5.png");
+    background-repeat : no-repeat;
+    background-size : cover;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-main {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+/******************************************/
+.top-top {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/*로고*/
+#logo {
+    height: 100px;
+    flex-basis: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo > div {
+    width: 100px;
+    height: 70px;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* 승주 시네마 */
+#cinemaName {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cinemaName > a{
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+/*로그인*/
+#login {
+    flex-basis: 10%;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition-duration: 0.3s;
+    border: 1px white solid;
+}
+#login > a {
+    text-decoration: none;
+    color: white;
+    transition-duration: 0.3s;
+}
+#login > a:hover {
+    color: black;
+}
+#login:hover {
+    color: black;
+    background-color: white;
+}
+
+
+
+/**********************************************/
+
+
+
+.top-bottom {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav > span{
+    border-radius: 10px;
+    transition-duration: 0.3s;
+}
+nav > span:hover{
+    color: black;
+    background-color: white;
+}
+
+/*상단 배너 - 영화*/
+#movieSelect {
+    cursor: pointer;
+    flex-basis: 10%;
+    text-align: center;
+    border: 1px white solid;
+    margin-bottom: 10px;
+}
+
+#movieSelect>a {
+    color: white;
+    transition-duration: 0.3s;
+}
+
+#movieSelect>a:hover{
+    color: black;
+}
+
+/*상단 배너 - 예매*/
+#reservation {
+    cursor: pointer;
+    flex-basis: 10%;
+    text-align: center;
+    border: 1px white solid;
+    margin-bottom: 10px;
+}
+
+
+#reservation>a {
+    color: white;
+    transition-duration: 0.3s;
+}
+
+#reservation>a:hover{
+    color: black;
+}
+
+
+/*********************************************************************/
+
+.signup-main {
+    display: flex;
+}
+
+.signup-left {
+    flex-basis: 60%;
+}
+
+
+
+.signup-form {
+    padding-left: 200px;
+}
+
+.confirm {
+    font-family: 'Giants-Bold';
+    color: white;
+    font-size: 15px;
+}
+
+.error {
+    font-family: 'Giants-Bold';
+    color: red;
+    font-size: 15px;
+}
+
+input {
+    font-family: 'Giants-Bold';
+    color: white;
+    width: 500px;
+    height: 50px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+
+input::placeholder {
+    font-family: 'Giants-Bold';
+    font-size: 15px;
+    color: white;
+}
+
+select {
+    font-family: 'Giants-Bold';
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    background-color: transparent;
+    border: 1px white solid;
+    border-radius: 10px;
+}
+
+option {
+    background: black;
+}
+
+#email1, #email2 {
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+.signup-right {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.randomNum {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#randomNumImage {
+    width: 200px;
+    height: 100px;
+}
+
+#inputRandomNum {
+    margin-left: 20px;
+    width: 180px;
+    height: 50px;
+}
+
+#randomNumMessage {
+    margin-bottom: 20px;
+}
+
+.signup-right > button {
+    cursor: pointer;
+    font-family: 'Giants-Bold';
+    font-size: 50px;
+    color: white;
+    width: 400px;
+    height: 100px;
+    background-color: transparent;
+    border: 1px white solid;
+    transition-duration: 0.3s;
+}
+
+.signup-right > button:hover {
+    background-color: brown;
+}
